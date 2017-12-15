@@ -13,7 +13,15 @@
 	    <servlet-name>DispatcherServlet</servlet-name>
 	    <servlet-class>com.sxd.springmvc.app16b.servlet.DispatcherServlet</servlet-class>
 	</servlet>
+	<servlet>
+	    <servlet-name>DispatcherServlet</servlet-name>
+	    <servlet-class>com.sxd.springmvc.app16c.servlet.DispatcherServlet</servlet-class>
+	</servlet>
 	
+	<servlet-mapping>
+	    <servlet-name>DispatcherServlet</servlet-name>
+	    <url-pattern>*.16caction</url-pattern>
+	</servlet-mapping> 
 	<servlet-mapping>
 	    <servlet-name>DispatcherServlet</servlet-name>
 	    <url-pattern>*.16baction</url-pattern>

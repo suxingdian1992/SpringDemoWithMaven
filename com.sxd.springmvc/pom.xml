@@ -36,6 +36,16 @@
     	<artifactId>spring-webmvc</artifactId>
     	<version>${springVersion}</version>
     </dependency>
+    <dependency>
+    	<groupId>jstl</groupId>
+    	<artifactId>jstl</artifactId>
+    	<version>${jstlVersion}</version>
+    </dependency>
+    <dependency>
+    	<groupId>taglibs</groupId>
+    	<artifactId>standard</artifactId>
+    	<version>${taglibsVersion}</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>com.sxd.springmvc</finalName>
@@ -44,5 +54,7 @@
   	<springVersion>4.3.12.RELEASE</springVersion>
   	<servletapiVersion>3.0.1</servletapiVersion>
   	<servletJspVersion>2.1</servletJspVersion>
+  	<jstlVersion>1.2</jstlVersion>
+  	<taglibsVersion>1.1.2</taglibsVersion>
   </properties>
 </project>
