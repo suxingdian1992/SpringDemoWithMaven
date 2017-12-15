@@ -9,11 +9,22 @@
 		<servlet-name>ControllerServlet</servlet-name>
 		<servlet-class>com.sxd.springmvc.app16a.servlet.ControllerServlet</servlet-class>
 	</servlet>
+	<servlet>
+	    <servlet-name>DispatcherServlet</servlet-name>
+	    <servlet-class>com.sxd.springmvc.app16b.servlet.DispatcherServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>DispatcherServlet</servlet-name>
+	    <url-pattern>*.16baction</url-pattern>
+	</servlet-mapping> 
 	
 	<servlet-mapping>
 		<servlet-name>ControllerServlet</servlet-name>
-		<url-pattern>*.action</url-pattern>
+		<url-pattern>*.16aaction</url-pattern>
 	</servlet-mapping>
+	
+	 
 
 
 </web-app>

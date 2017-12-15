@@ -72,10 +72,10 @@ public class ControllerServlet extends HttpServlet {
 
         // forward to a view
         String dispatchUrl = null;
-        if (action.equals("product_input.action")) {
-            dispatchUrl = "WEB-INF/jsp/ProductForm.jsp";
-        } else if (action.equals("product_save.action")) {
-            dispatchUrl = "WEB-INF/jsp/ProductDetails.jsp";
+        if (action.equals("product_input.16aaction")) {
+            dispatchUrl = "WEB-INF/jsp/app16a/ProductForm.jsp";
+        } else if (action.equals("product_save.16aaction")) {
+            dispatchUrl = "WEB-INF/jsp/app16a/ProductDetails.jsp";
         }
         if (dispatchUrl != null) {
             RequestDispatcher rd = 
