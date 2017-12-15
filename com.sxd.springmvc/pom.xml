@@ -22,21 +22,26 @@
     <dependency>
     	<groupId>javax.servlet</groupId>
     	<artifactId>javax.servlet-api</artifactId>
-    	<version>3.0.1</version>
+    	<version>${servletapiVersion}</version>
     	<scope>provided</scope>
     </dependency>
     <dependency>
     	<groupId>javax.servlet.jsp</groupId>
     	<artifactId>jsp-api</artifactId>
-    	<version>2.1</version>
+    	<version>${servletJspVersion}</version>
     	<scope>provided</scope>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-webmvc</artifactId>
+    	<version>${springVersion}</version>
     </dependency>
   </dependencies>
   <build>
     <finalName>com.sxd.springmvc</finalName>
   </build>
   <properties>
-  	<springVersion>3.2.5.RELEASE</springVersion>
+  	<springVersion>4.3.12.RELEASE</springVersion>
   	<servletapiVersion>3.0.1</servletapiVersion>
   	<servletJspVersion>2.1</servletJspVersion>
   </properties>
