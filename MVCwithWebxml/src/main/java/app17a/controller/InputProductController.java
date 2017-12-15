@@ -16,7 +16,8 @@ public class InputProductController implements Controller {
     public ModelAndView handleRequest(HttpServletRequest request,
             HttpServletResponse response) throws Exception {
         logger.info("InputProductController called");
-        return new ModelAndView("/WEB-INF/jsp/ProductForm.jsp");
+        /* 此处不需要再写成完全的地址是因为在springmvc中为返回的请求加入了前缀和后缀，所以可以去除 */
+        return new ModelAndView("ProductForm");
     }
 
 }

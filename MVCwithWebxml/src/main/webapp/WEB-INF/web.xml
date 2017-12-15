@@ -9,6 +9,10 @@
             org.springframework.web.servlet.DispatcherServlet
         </servlet-class>
         <!-- 当不指定初始化参数的时候，spring会默认在web-info目录下找一个xxx-servlet.xml的文件来读取内部的beans对象，取得控制器和url的关联 -->
+         <init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/config/springmvc-servlet.xml</param-value>
+		</init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
