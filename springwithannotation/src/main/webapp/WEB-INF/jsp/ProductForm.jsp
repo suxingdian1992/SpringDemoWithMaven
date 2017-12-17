@@ -2,7 +2,9 @@
 <html>
 <head>
 <title>Add Product Form 17a</title>
-<style type="text/css">@import url(css/main.css);</style>
+<!-- <style type="text/css">@import url(css/main.css);</style> -->
+<!-- 此处使用外部引用css文件方式导入页面样式 -->
+<link rel="stylesheet" type="text/css" href="/springwithannotation/css/main.css"/>
 </head>
 <body>
 
