@@ -7,7 +7,8 @@
 <body>
 
 <div id="global">
-<form action="product_save" method="post">
+<!-- 此处的action会追加在之前控制器中定义的product之后，组合为.../product/save -->
+<form action="save" method="post">
     <fieldset>
         <legend>Add a product</legend>
             <p>

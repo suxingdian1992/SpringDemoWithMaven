@@ -15,21 +15,23 @@ import app18a.form.ProductForm;
  *         2017年12月15日
  */
 @Controller
+@RequestMapping(value = "/product")
 public class ProductController {
 
 	private static final Log logger = LogFactory.getLog(ProductController.class);
 
-	@RequestMapping(value = "/product_input")
+	@RequestMapping(value = "/input")
 	public String inputProduct() {
 		logger.info("inputProduct called");
 		// 此处在spring-mvc.xml中已经配置了前后坠，所以此处返回的东西会被修改为/WEB-INF/jsp/ProductForm.jsp
 		return "ProductForm";
 	}
 
-	@RequestMapping(value = "/product_save")
+	@RequestMapping(value = "/save")
 	public String saveProduct(ProductForm productForm, Model model) {
 		logger.info("saveProduct called");
 		// no need to create and instantiate a ProductForm
+		//此处疑惑，为什么只需传入productform？？
 		// create Product
 		Product product = new Product();
 		product.setName(productForm.getName());
