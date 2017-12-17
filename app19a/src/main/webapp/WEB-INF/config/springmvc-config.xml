@@ -12,6 +12,14 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
         
+        <!-- 获取数据源 -->
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/sxdtest?useSSL=false"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="161210318sxd"></property>
+	</bean>
+        
         <!-- 扫描控制器和扫描服务 -->
     <context:component-scan base-package="app19a.controller"/>
     <context:component-scan base-package="app19a.service"/>

@@ -20,6 +20,11 @@
     	<version>${springVersion}</version>
     </dependency>
     <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-jdbc</artifactId>
+    	<version>${springVersion}</version>
+    </dependency>
+    <dependency>
     	<groupId>javax.servlet</groupId>
     	<artifactId>javax.servlet-api</artifactId>
     	<version>${servletapiVersion}</version>
@@ -46,15 +51,21 @@
     	<artifactId>standard</artifactId>
     	<version>${taglibsVersion}</version>
     </dependency>
+    <dependency>
+    	<groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+    	<version>${MySQLConnector}</version>
+    </dependency>
   </dependencies>
    <build>
     <finalName>app19a</finalName>
   </build>
   <properties>
-  	<springVersion>4.3.12.RELEASE</springVersion>
+  	<springVersion>5.0.2.RELEASE</springVersion>
   	<servletapiVersion>3.0.1</servletapiVersion>
   	<servletJspVersion>2.1</servletJspVersion>
   	<jstlVersion>1.2</jstlVersion>
   	<taglibsVersion>1.1.2</taglibsVersion>
+  	<MySQLConnector>5.1.34</MySQLConnector>
   </properties>
 </project>
