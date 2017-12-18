@@ -3,14 +3,15 @@ package app19a.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import app19a.domain.Book;
 import app19a.domain.Category;
 
 @Service
-public class BookServiceImpl implements BookService {
-    
+public class BookServiceImpl extends JdbcTemplate implements BookService {//当需要和数据库进行交互的时候，集成jdbc模版类，并获得即可
+	
     /*
      * this implementation is not thread-safe
      */
@@ -26,13 +27,13 @@ public class BookServiceImpl implements BookService {
         categories.add(category2);
         categories.add(category3);
         
-        books = new ArrayList<Book>();
+       /* books = new ArrayList<Book>();
         books.add(new Book(1L, "9780980839623", 
                 "Servlet & JSP: A Tutorial", 
                 category1, "Budi Kurniawan"));
         books.add(new Book(2L, "9780980839630",
                 "C#: A Beginner's Tutorial",
-                category1, "Jayden Ky"));
+                category1, "Jayden Ky"));*/
     }
 
     public List<Category> getAllCategories() {
