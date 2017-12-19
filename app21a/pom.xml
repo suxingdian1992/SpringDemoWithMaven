@@ -58,7 +58,7 @@
     </dependency>
   </dependencies>
    <build>
-    <finalName>app21b</finalName>
+    <finalName>app21a</finalName>
   </build>
   <properties>
   	<springVersion>5.0.2.RELEASE</springVersion>
